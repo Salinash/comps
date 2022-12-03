@@ -1,0 +1,20 @@
+<!--aqui llamamos otra pagina 
+<app-elements-home></app-elements-home>
+<app-collections-home></app-collections-home> -->
+
+<!-- *la line de abajo indica que llamamos otras paginas desde esta html 
+<router-outlet></router-outlet>-->
+
+<div class="ui container">
+    <div class="ui secondary pointing menu">
+        <!--Add a link to header in the App Component's Template file.
+        This should navigate to the 'mods' route-->
+        <a routerLink="/elements" routerLinkActive="active" class="item">Elements</a>
+        <a routerLink="/collections" routerLinkActive="active" class="item">Collections</a>
+        <a routerLink="/views" routerLinkActive="active" class="item">Views</a>
+        <a routerLink="/mods" routerLinkActive="active" class="item">Modules</a>
+    </div>
+    <div class="ui segment">
+        <router-outlet></router-outlet>
+    </div>
+</div>
